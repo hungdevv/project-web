@@ -26,7 +26,15 @@ button.btn.btn-outline-secondary.bt-header{
     border: none;
 }
 button.btn.btn-outline-secondary.bt-header i{
+    transition: 100ms;
     color: #fff;
+}
+button.btn.btn-outline-secondary.bt-header i:hover{
+    transform: scale(1.2);
+    color: #fff;
+}
+button.btn.btn-outline-secondary.bt-header i{
+    color: rgba(255, 255, 255, 0.712);
 }
 .t-header-b-2 p, .t-header-b-2 b, .t-header-b-2 i{
     color: #fff;
@@ -44,4 +52,37 @@ button.btn.btn-outline-secondary.bt-header i{
     border-radius: 50%;
     background-color: #f10e34;
     height: 38px;
+   
+}
+.t-header-b-2-i i{
+    transition: 200ms
+}
+.t-header-b-2-i:hover.t-header-b-2-i i{
+    transform: translateY(4px) scale(1.25);
+}
+input.form-control.ip-header1:focus{
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 576px) {
+    .logo{
+        text-align: center;
+    }
+    .t-header-t{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+    .t-header-t a{
+        border: none;
+        margin: 5px 0;
+    }
+    .ip-header1{
+        margin-left: 10px
+    }
+    .t-header-b-2{
+        margin-right: 10px
+    }
 }
