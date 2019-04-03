@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #f3f3f3 !important;
 }
 .t-header{
     padding-top: 16px;
@@ -65,6 +66,69 @@ input.form-control.ip-header1:focus{
     border: none;
 }
 
+.t-menu{
+    background-color:#f10e34;
+}
+
+.t-menu .t-menu-c1{
+    padding-top: 8px;
+    position: relative;
+    transition: 2s;
+}
+.t-menu .t-menu-c1 p, .t-menu .t-menu-c1-2 > i{
+    margin: 0;
+    color:#fbc3cc;
+}
+.t-menu .t-menu-c1 p {
+    padding-left: 18px;
+}
+.t-menu .t-menu-c1:hover p{
+    color: #fff;
+}
+.t-menu .t-menu-c1-2:hover > i{
+    color: #fff;
+}
+.t-menu .t-menu-nav-2 a{
+    color: #fbc3cc;
+    transition: 100ms;
+}
+.t-menu .t-menu-nav-2 a:hover{
+    color: #ffff;
+}
+.t-menu-toggle {
+    display: none;
+    left: -10%;
+    background-color: #fff;
+    position: absolute;
+    top: 125%;
+    width: 100%;
+    padding-left: 25px ;
+    transition: 2s;
+}
+.t-menu-toggle .list{
+    list-style: none;
+    padding: 0px;
+
+}
+.t-menu-toggle .list .item{
+    border-bottom: 1px solid #eaeaea;
+    padding: 8px 0px 8px 10px;
+}
+.t-menu-toggle .list .item-b{
+    padding: 8px 0px 0px 10px;
+}
+
+.t-menu-toggle .list a {
+    padding-left: 18px;
+    color:#595959;
+}
+.t-menu-toggle .list i {
+    color: #b1b1b1
+}
+
+.t-menu .t-menu-c1:hover .t-menu-toggle{
+    display: block;
+}
 @media (max-width: 576px) {
     .logo{
         text-align: center;
